@@ -24,7 +24,8 @@ header li{
 }
 
 header li a {
-    color: #f5f6fa;
+    /*color: #f5f6fa;*/
+    color: darkgray;
     text-decoration: none;
 }
 
@@ -91,33 +92,33 @@ section h2 {
     font-size: 32px;
 }
 
-#sports {
+/*#sports {
     background-color: rgba(0, 255, 0, 0.1);
-}
+}*/
 
 #sports .articles article a {
     background-color: #009432;
 }
 
-#economy{
+/*#economy{
     background-color: #f8f59f;
-}
+}*/
 
 #economy .articles article a {
     background-color: #ff9f1a;
 }
 
-#technology{
+/*#technology{
     background-color: aquamarine;
-}
+}*/
 
 #technology .articles article a {
     background-color: aqua;
 }
 
-#games{
+/*#games{
     background-color: rgb(12, 65, 47);
-}
+}*/
 
 #games .articles article a {
     background-color: rgb(7, 77, 77);
@@ -154,8 +155,108 @@ section h2 {
 p {
     text-align: justify; /* para alinhar o texto na mesma proporção na esquerda e na direita*/
     line-height: 1.5; /* altura da linha */
-    height: 4.5em; /* altura do parágrafo (3 linhas x altura da linha) */
+    /*height: 4.5em; /* altura do parágrafo (3 linhas x altura da linha) */
     overflow: hidden; /* oculta o texto que excede a altura especificada */
     margin: 0; /* margem zero para garantir que não haja espaço extra entre os parágrafos */
 }
 
+#technology #ler-mais{
+    cursor: pointer;
+    background-color: aqua;
+    height: 35px;
+    width: 75px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 10px;
+    border-top: 25px;
+}
+
+#technology #expandir:hover{
+    color: black;
+}
+
+#technology #expandir{
+    cursor: pointer;
+    background-color: aqua;
+    height: 35px;
+    width: 75px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 10px;
+    border-top: 25px;
+}
+
+#technology #ler-mais:hover{
+    color: black;
+}
+
+
+.clic{
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.clic::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(transparent, #363636);
+}
+
+.motorola{
+    position: relative;
+}
+
+.motorola.active .clic{
+    height: auto;
+}
+
+.motorola.active .content{
+    visibility: hidden;
+}
+
+.samsung{
+    position: relative;
+}
+
+.samsung.active .clic{
+    height: auto;
+}
+
+.samsung.active .content{
+    visibility: hidden;
+}
+
+
+#technology #aumentar{
+    cursor: pointer;
+    background-color: aqua;
+    height: 35px;
+    width: 75px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 10px;
+    border-top: 25px;
+}
+
+#technology #aumentar:hover{
+    color: black;
+}
+
+.redmi{
+    position: relative;
+}
+
+.redmi.active .clic{
+    height: auto;
+}
+
+.redmi.active .content{
+    visibility: hidden;
+}
