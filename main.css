@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-body > header { 
+body>header {
     background-color: #2f3640;
     padding: 16px 0;
     color: #f5f6fa;
@@ -16,7 +16,7 @@ header .container {
     justify-content: space-between;
 }
 
-header li{
+header li {
     display: inline;
     font: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -24,7 +24,6 @@ header li{
 }
 
 header li a {
-    /*color: #f5f6fa;*/
     color: darkgray;
     text-decoration: none;
 }
@@ -32,8 +31,10 @@ header li a {
 .container {
     width: 1336px;
     margin: 0 auto;
-} 
+}
 
+
+/* organização articles*/
 .articles {
     display: flex;
     flex-wrap: wrap;
@@ -41,27 +42,23 @@ header li a {
 }
 
 .articles article img {
-    /*padding: 32px 32px 32px 32px;*/
-   /*height: 30%; - funcionou porem nao do jeito que eu precisava*/ 
-   width: 100%;
+    width: 100%;
 }
 
 .articles article {
     width: 30%;
 }
 
-section{
-    padding: 16px 0;
-}
-
 section h2,
-.articles article {
+.articles article,
+.articles article h3 {
     margin-bottom: 16px;
-}
-
-.articles article h3{
     margin-top: 8px;
     margin-bottom: 8px;
+}
+
+.articles article h3 {
+    font-size: 24px;
 }
 
 .articles article a {
@@ -72,134 +69,97 @@ section h2,
     text-decoration: none;
     font-weight: bold;
     margin-top: 8px;
-
 }
 
-.articles article a:hover{
+.articles article a:hover {
     text-decoration: underline;
 }
 
-.articles article P,
-.articles article a  {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.articles article h3 {
-    font-size: 24px;
-}
+/*fim*/
 
 section h2 {
     font-size: 32px;
 }
 
-/*#sports {
-    background-color: rgba(0, 255, 0, 0.1);
-}*/
-
-#sports .articles article a {
-    background-color: #009432;
+section {
+    padding: 16px 0;
 }
 
-/*#economy{
-    background-color: #f8f59f;
-}*/
+
+/*Aparencia dos botoes*/
+#sports .articles article a {
+    background-color: aqua;
+}
 
 #economy .articles article a {
-    background-color: #ff9f1a;
+    background-color: aqua;
 }
-
-/*#technology{
-    background-color: aquamarine;
-}*/
 
 #technology .articles article a {
     background-color: aqua;
 }
 
-/*#games{
-    background-color: rgb(12, 65, 47);
-}*/
-
 #games .articles article a {
-    background-color: rgb(7, 77, 77);
+    background-color: aqua;
 }
 
-#technology img{
-    height: 250px; /* Defina a altura desejada */
-    width: 380px; /* Deve sr ajustado conforme a necessidade */
-    object-fit: cover; /* Mantém a proporção da imagem */
-    margin-right: 10px; /
-}
+/*fim dos botoes */
 
-#games img{
-    height: 200px; /* Defina a altura desejada */
+/* Organização das imagens dentro das sections*/
+#technology img {
+    height: 250px;
+    /* Defina a altura desejada */
     width: 380px;
-    object-fit: cover; /* Mantém a proporção da imagem */
-    margin-right: 10px; /
+    /* Deve ser ajustado conforme a necessidade */
+    object-fit: cover;
+    /* Mantém a proporção da imagem */
+    margin-right: 10px;
 }
 
-#economy img{
-    height: 200px; /* Defina a altura desejada */
+#games img {
+    height: 200px;
     width: 380px;
-    object-fit: cover; /* Mantém a proporção da imagem */
-    margin-right: 10px; /
+    object-fit: cover;
+    margin-right: 10px;
 }
 
-#sport img{
-    height: 200px; /* Defina a altura desejada */
+#economy img {
+    height: 200px;
     width: 380px;
-    object-fit: cover; /* Mantém a proporção da imagem */
-    margin-right: 10px; /
+    object-fit: cover;
+    margin-right: 10px;
 }
+
+#sport img {
+    height: 200px;
+    width: 380px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/*fim da organização das imagens*/
 
 p {
-    text-align: justify; /* para alinhar o texto na mesma proporção na esquerda e na direita*/
-    line-height: 1.5; /* altura da linha */
+    text-align: justify;
+    /* para alinhar o texto na mesma proporção na esquerda e na direita*/
+    line-height: 1.5;
+    /* altura da linha */
     /*height: 4.5em; /* altura do parágrafo (3 linhas x altura da linha) */
-    overflow: hidden; /* oculta o texto que excede a altura especificada */
-    margin: 0; /* margem zero para garantir que não haja espaço extra entre os parágrafos */
+    overflow: hidden;
+    /* oculta o texto que excede a altura especificada */
+    margin: 0;
+    /* margem zero para garantir que não haja espaço extra entre os parágrafos */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#technology #ler-mais{
-    cursor: pointer;
-    background-color: aqua;
-    height: 35px;
-    width: 75px;
-    border: none;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 10px;
-    border-top: 25px;
-}
-
-#technology #expandir:hover{
-    color: black;
-}
-
-#technology #expandir{
-    cursor: pointer;
-    background-color: aqua;
-    height: 35px;
-    width: 75px;
-    border: none;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 10px;
-    border-top: 25px;
-}
-
-#technology #ler-mais:hover{
-    color: black;
-}
-
-
-.clic{
+/*Para o botão ler mais funcionar*/
+.clic {
     height: 300px;
     overflow: hidden;
     position: relative;
 }
 
-.clic::before{
+.clic::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -208,32 +168,11 @@ p {
     background: linear-gradient(transparent, #363636);
 }
 
-.motorola{
-    position: relative;
-}
-
-.motorola.active .clic{
-    height: auto;
-}
-
-.motorola.active .content{
-    visibility: hidden;
-}
-
-.samsung{
-    position: relative;
-}
-
-.samsung.active .clic{
-    height: auto;
-}
-
-.samsung.active .content{
-    visibility: hidden;
-}
+/*fim*/
 
 
-#technology #aumentar{
+/*Botão ler mais Motorola*/
+#technology #expandir {
     cursor: pointer;
     background-color: aqua;
     height: 35px;
@@ -243,20 +182,156 @@ p {
     font-size: 18px;
     font-weight: 10px;
     border-top: 25px;
+    border-radius: 6px;
 }
 
-#technology #aumentar:hover{
+#technology #expandir:hover {
     color: black;
 }
 
-.redmi{
+.motorola {
     position: relative;
 }
 
-.redmi.active .clic{
+.motorola.active .clic {
     height: auto;
 }
 
-.redmi.active .content{
+.motorola.active .content {
     visibility: hidden;
 }
+
+
+/*Botão ler mais Samsung*/
+#technology #ler-mais {
+    cursor: pointer;
+    background-color: aqua;
+    height: 35px;
+    width: 75px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 10px;
+    border-top: 25px;
+    border-radius: 6px;
+}
+
+#technology #ler-mais:hover {
+    color: black;
+}
+
+.samsung {
+    position: relative;
+}
+
+.samsung.active .clic {
+    height: auto;
+}
+
+.samsung.active .content {
+    visibility: hidden;
+}
+
+/*Botão ler mais Redmi*/
+#technology #aumentar {
+    cursor: pointer;
+    background-color: aqua;
+    height: 35px;
+    width: 75px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 10px;
+    border-top: 25px;
+    border-radius: 6px;
+}
+
+#technology #aumentar:hover {
+    color: black;
+}
+
+.redmi {
+    position: relative;
+}
+
+.redmi.active .clic {
+    height: auto;
+}
+
+.redmi.active .content {
+    visibility: hidden;
+}
+
+/*fim*/
+
+/*footer*/
+.contatos {
+    padding: 16px;
+    background-color: #2f3640;
+    color: #fff;
+    display: flex;
+    /*align-items: column;*/
+    justify-content: space-between;
+}
+
+.contatos a {
+    color: #fff;
+    list-style: none;
+}
+
+.articles img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para o layout responsivo 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .contatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .contatos h2 {
+    margin-right: 20px;
+}
+
+footer .contatos a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}*/
