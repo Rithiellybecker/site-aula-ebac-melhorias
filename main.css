@@ -1,8 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+/* header do projeto */
 
 body>header {
     background-color: #2f3640;
@@ -13,6 +19,7 @@ body>header {
 header .container {
     display: flex;
     align-items: center;
+    /* justify-content: center; */
     justify-content: space-between;
 }
 
@@ -26,43 +33,129 @@ header li {
 header li a {
     color: darkgray;
     text-decoration: none;
+    margin-right: 10px;
+}
+header h1{
+    padding: 10px;
+}
+
+/* section sports */
+
+.esporte p {
+    text-align: justify;
+    line-height: 1.5;
+    height: 4.5em;
+    overflow: hidden;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sports img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    /* margin-right: 10px; */
 }
 
 .container {
-    width: 1336px;
-    margin: 0 auto;
+    /* max-width: 90vw; */
+    display: flex;
+    /* flex-wrap: wrap; */
 }
 
-
-/* organização articles*/
 .articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    row-gap: 10px;
+}
+
+.esporte {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* section economy */
+
+#economy p {
+    text-align: justify;
+    line-height: 1.5;
+    height: 4.5em;
+    overflow: hidden;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#economy img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    /* margin-right: 10px; */
+}
+
+.economia {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* section technology */
+
+#technology img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    /* margin-right: 10px; */
+}
+
+.tecnologia {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.clic p {
+    text-align: justify;
+    line-height: 1.5;
+    height: 4.5em;
+    /* overflow: hidden; */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* section game */
+#games img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    /* margin-right: 10px; */
+}
+
+.jogos {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.jogos p {
+    text-align: justify;
+    /* para alinhar o texto na mesma proporção na esquerda e na direita*/
+    line-height: 1.5;
+    /* altura da linha */
+    height: 4.5em;
+    overflow: hidden;
+    /* oculta o texto que excede a altura especificada */
+    margin: 0;
+    /* margem zero para garantir que não haja espaço extra entre os parágrafos */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* fim */
+
+.article {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.articles article img {
-    width: 100%;
-}
-
-.articles article {
-    width: 30%;
-}
-
-section h2,
-.articles article,
-.articles article h3 {
-    margin-bottom: 16px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.articles article h3 {
-    font-size: 24px;
 }
 
 .articles article a {
-    background-color: blue;
+    background-color: black;
     color: #fff;
     padding: 8px;
     display: inline-block;
@@ -75,84 +168,8 @@ section h2,
     text-decoration: underline;
 }
 
-/*fim*/
+/* função do botão ler mais */
 
-section h2 {
-    font-size: 32px;
-}
-
-section {
-    padding: 16px 0;
-}
-
-
-/*Aparencia dos botoes*/
-#sports .articles article a {
-    background-color: aqua;
-}
-
-#economy .articles article a {
-    background-color: aqua;
-}
-
-#technology .articles article a {
-    background-color: aqua;
-}
-
-#games .articles article a {
-    background-color: aqua;
-}
-
-/*fim dos botoes */
-
-/* Organização das imagens dentro das sections*/
-#technology img {
-    height: 250px;
-    /* Defina a altura desejada */
-    width: 380px;
-    /* Deve ser ajustado conforme a necessidade */
-    object-fit: cover;
-    /* Mantém a proporção da imagem */
-    margin-right: 10px;
-}
-
-#games img {
-    height: 200px;
-    width: 380px;
-    object-fit: cover;
-    margin-right: 10px;
-}
-
-#economy img {
-    height: 200px;
-    width: 380px;
-    object-fit: cover;
-    margin-right: 10px;
-}
-
-#sport img {
-    height: 200px;
-    width: 380px;
-    object-fit: cover;
-    margin-right: 10px;
-}
-
-/*fim da organização das imagens*/
-
-p {
-    text-align: justify;
-    /* para alinhar o texto na mesma proporção na esquerda e na direita*/
-    line-height: 1.5;
-    /* altura da linha */
-    /*height: 4.5em; /* altura do parágrafo (3 linhas x altura da linha) */
-    overflow: hidden;
-    /* oculta o texto que excede a altura especificada */
-    margin: 0;
-    /* margem zero para garantir que não haja espaço extra entre os parágrafos */
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/*Para o botão ler mais funcionar*/
 .clic {
     height: 300px;
     overflow: hidden;
@@ -165,16 +182,13 @@ p {
     bottom: 0;
     width: 100%;
     height: 45px;
-    background: linear-gradient(transparent, #363636);
 }
 
-/*fim*/
+/* tecnology */
 
-
-/*Botão ler mais Motorola*/
 #technology #expandir {
     cursor: pointer;
-    background-color: aqua;
+    background-color: black;
     height: 35px;
     width: 75px;
     border: none;
@@ -189,23 +203,9 @@ p {
     color: black;
 }
 
-.motorola {
-    position: relative;
-}
-
-.motorola.active .clic {
-    height: auto;
-}
-
-.motorola.active .content {
-    visibility: hidden;
-}
-
-
-/*Botão ler mais Samsung*/
 #technology #ler-mais {
     cursor: pointer;
-    background-color: aqua;
+    background-color: black;
     height: 35px;
     width: 75px;
     border: none;
@@ -220,22 +220,9 @@ p {
     color: black;
 }
 
-.samsung {
-    position: relative;
-}
-
-.samsung.active .clic {
-    height: auto;
-}
-
-.samsung.active .content {
-    visibility: hidden;
-}
-
-/*Botão ler mais Redmi*/
 #technology #aumentar {
     cursor: pointer;
-    background-color: aqua;
+    background-color: black;
     height: 35px;
     width: 75px;
     border: none;
@@ -250,6 +237,33 @@ p {
     color: black;
 }
 
+/* motorola */
+.motorola {
+    position: relative;
+}
+
+.motorola.active .clic {
+    height: auto;
+}
+
+.motorola.active .content {
+    visibility: hidden;
+}
+
+/* samsung */
+.samsung {
+    position: relative;
+}
+
+.samsung.active .clic {
+    height: auto;
+}
+
+.samsung.active .content {
+    visibility: hidden;
+}
+
+/* redmi */
 .redmi {
     position: relative;
 }
@@ -262,15 +276,14 @@ p {
     visibility: hidden;
 }
 
-/*fim*/
+/* footer */
 
-/*footer*/
 .contatos {
     padding: 16px;
     background-color: #2f3640;
     color: #fff;
     display: flex;
-    /*align-items: column;*/
+    align-items: column;
     justify-content: space-between;
 }
 
@@ -284,54 +297,30 @@ p {
     height: auto;
 }
 
-/* Estilo para o layout responsivo 
 .container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-header h1 {
-    margin: 0;
-    text-align: center;
-}
-
-nav ul {
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer .contatos {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
 }
 
-footer .contatos h2 {
-    margin-right: 20px;
+.item {
+    width: calc(33.33% - 20px);
+    /* 20px de margem entre os itens */
+    margin: 10px;
+    background-color: #f2f2f2;
+    text-align: center;
 }
 
-footer .contatos a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
-}*/
+/* media screen */
+
+@media screen and (max-width: 520px) {
+    .articles {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contatos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
